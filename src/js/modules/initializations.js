@@ -282,3 +282,11 @@ if (document.querySelector('.modal--new-user2')) {
 //     callButtonClass: 'info__submit-button--free-download'
 //   });
 // };
+
+
+setTimeout(function() {
+  var submenuIconArr = document.querySelectorAll('.submenu__icon');
+  for (var i = 0; i < submenuIconArr.length; i++)  {
+    submenuIconArr[i].setAttribute('src', submenuIconArr[i].getAttribute('data-src'))
+  }
+}, 500);

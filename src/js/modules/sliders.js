@@ -7,6 +7,11 @@
   if (document.querySelector('.top__list-wrapper--vendor')) {
     var topSlider = new Swiper('.top__list-wrapper--vendor', {
       slidesPerView: 'auto',
+      lazy: {
+        loadPrevNext: true,
+        loadPrevNextAmount: 6,
+        loadOnTransitionStart: true
+      },
       scrollbar: {
         el: '.top__slider-pagination--vendor'
       },
