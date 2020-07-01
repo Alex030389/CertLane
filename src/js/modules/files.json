@@ -15,5 +15,6 @@
   "src/js/modules/accordion.js",
   "src/js/modules/load-more.js",
   "src/js/modules/login-registration.js",
-  "src/js/modules/initializations.js"
+  "src/js/modules/initializations.js",
+  "src/js/modules/lazy.js"
 ]
