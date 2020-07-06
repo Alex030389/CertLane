@@ -283,10 +283,16 @@ if (document.querySelector('.modal--new-user2')) {
 //   });
 // };
 
+/////////////////////////////////////////////////////////////// lazy
+var lazyLoadInstance = new LazyLoad({
+	elements_selector: ".lazy"
+});
 
+/////////////////////////////////////////////////////////////// submenu__icon
 setTimeout(function() {
   var submenuIconArr = document.querySelectorAll('.submenu__icon');
   for (var i = 0; i < submenuIconArr.length; i++)  {
-    submenuIconArr[i].setAttribute('src', submenuIconArr[i].getAttribute('data-src'))
+    submenuIconArr[i].setAttribute('src', submenuIconArr[i].getAttribute('data-src'));
+    submenuIconArr[i].removeAttribute('data-src');
   }
 }, 500);

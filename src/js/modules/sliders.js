@@ -9,7 +9,7 @@
       slidesPerView: 'auto',
       lazy: {
         loadPrevNext: true,
-        loadPrevNextAmount: 6,
+        loadPrevNextAmount: 7,
         loadOnTransitionStart: true
       },
       scrollbar: {
@@ -19,6 +19,15 @@
         nextEl: '.top__vendor-slider-button--next',
         prevEl: '.top__vendor-slider-button--previous',
       },
+      breakpoints: {
+        425: {
+          lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 4,
+            loadOnTransitionStart: true
+          }
+        }
+      }
     });
   }
   
@@ -28,6 +37,11 @@
   if (document.querySelector('.top__list-wrapper--certifications')) {
     var topSlider2 = new Swiper('.top__list-wrapper--certifications', {
       slidesPerView: 'auto',
+      lazy: {
+        loadPrevNext: true,
+        loadPrevNextAmount: 7,
+        loadOnTransitionStart: true
+      },
       scrollbar: {
         el: '.top__slider-pagination--certifications'
       },
@@ -35,6 +49,15 @@
         nextEl: '.top__certifications-slider-button--next',
         prevEl: '.top__certifications-slider-button--previous',
       },
+      breakpoints: {
+        425: {
+          lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 4,
+            loadOnTransitionStart: true
+          }
+        }
+      }
     });
   }
 
@@ -297,6 +320,20 @@
 
       var videotutorialSlider = new Swiper (slider, {
         slidesPerView: 'auto',
+        lazy: {
+          loadPrevNext: true,
+          loadPrevNextAmount: 7,
+          loadOnTransitionStart: true
+        },
+        breakpoints: {
+          425: {
+            lazy: {
+              loadPrevNext: true,
+              loadPrevNextAmount: 3,
+              loadOnTransitionStart: true
+            }
+          }
+        },
         scrollbar: {
           el: '.videotutorials__slider-pagination-' + index,
         },
