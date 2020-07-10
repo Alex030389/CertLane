@@ -289,10 +289,35 @@ var lazyLoadInstance = new LazyLoad({
 });
 
 /////////////////////////////////////////////////////////////// submenu__icon
-setTimeout(function() {
+var mainMenu = document.querySelector(".page-header__main-menu");
+if(getComputedStyle(mainMenu).display != 'none') {
+  submenuIconArrLoad();
+  setTimeout(function() {
+    mobileMenuIconLoad();
+  }, 3000);
+} else {
+  setTimeout(function() {
+    mobileMenuIconLoad();
+    setTimeout(function() {
+      submenuIconArrLoad();    
+    }, 2000);
+  },1000);
+}
+
+function mobileMenuIconLoad() {
+  var mobileMenuIcon = document.querySelectorAll('.mobile-menu__vendor-icon');
+  if(mobileMenuIcon.length) {
+    for (var i = 0; i < mobileMenuIcon.length; i++)  {
+      mobileMenuIcon[i].setAttribute('src', mobileMenuIcon[i].getAttribute('data-src'));
+      mobileMenuIcon[i].removeAttribute('data-src');
+    }
+  }
+}
+
+function submenuIconArrLoad() {
   var submenuIconArr = document.querySelectorAll('.submenu__icon');
   for (var i = 0; i < submenuIconArr.length; i++)  {
     submenuIconArr[i].setAttribute('src', submenuIconArr[i].getAttribute('data-src'));
     submenuIconArr[i].removeAttribute('data-src');
   }
-}, 100);
+}
