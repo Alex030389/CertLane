@@ -295,4 +295,4 @@ setTimeout(function() {
     submenuIconArr[i].setAttribute('src', submenuIconArr[i].getAttribute('data-src'));
     submenuIconArr[i].removeAttribute('data-src');
   }
-}, 500);
+}, 100);
