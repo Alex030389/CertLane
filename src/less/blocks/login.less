@@ -5,6 +5,10 @@
 .login__heading {
   padding: 0;
   margin-bottom: 45px;
+
+  &--pt-large {
+    padding-top: 30px;
+  }
 }
 
 .login__field-wrapper {
@@ -91,6 +95,12 @@
 }
 
 @media (max-width: @mobile-width) {
+  .login__heading {  
+    &--pt-large {
+      padding-top: 0;
+    }
+  }
+
   .login {
     max-width: none;
   }
