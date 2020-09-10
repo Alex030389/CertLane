@@ -206,13 +206,102 @@
                       Content 3
                     </div>
                   </li>
-
                 </ul>
-
               </div>
             </section>
           </div>
 
+          <div class="comments-v2">
+            <!-- это слайдер с комментами -->
+            <section class="comments-v2__section">
+              <h2 class="comments-v2__heading heading heading--medium comments--padding-top">Comments</h2>
+              <div class="comments-v2__wrap">
+                <div class="comments-v2__list-container swiper-container">                
+                  <div class="comments-v2__list swiper-wrapper">
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab possimus quo doloribus sit, praesentium a aliquam quasi, dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni! Dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni!">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab possimus quo doloribus sit, praesentium a aliquam quasi, dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni! Dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni!</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab possimus quo doloribus sit, praesentium a aliquam quasi, dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni! Dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni!">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab possimus quo doloribus sit, praesentium a aliquam quasi, dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni! Dolorum ipsam distinctio voluptatum illum excepturi eum! Mollitia illo ad praesentium dolorum magni!</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                    <div class="comments-v2__item swiper-slide">
+                      <p class="comments-v2__name">Lisa</p>
+                      <p class="comments-v2__text" data-comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum, pariatur quasi doloribus cupiditate debitis dolor esse illo ipsum.</p>
+                    </div>
+                  </div><!--/comments-v2__list-->
+                  <div class="top__slider-pagination top__slider-pagination--comments-v2"></div>
+                </div><!--/comments-v2__list-container-->
+
+                <button class="top__featured-slider-button button top__featured-slider-button--previous" type="button"><span class="visually-hidden">Previous</span></button>
+                <button class="top__featured-slider-button button top__featured-slider-button--next" type="button"><span class="visually-hidden">Next</span></button>  
+              </div><!--/comments-v2__wrap-->
+            </section>
+
+
+
+            <!-- это форма отправки -->
+            <section id="comments" class="comments__add-comment">
+              <a href="#" id="commentForm"></a>
+              <h3 class="comments__heading heading heading">Add Comment</h3>
+              <div id="jsErr">
+                 </div>                        <form class="comments__form form" action="https://www.certbolt.com/comptia-network-plus-exam-dumps#commentForm" method="post">
+                  <input type="hidden" name="act" value="add_comment">
+                  <p class="comments__form-field-wrapper form__field-wrapper">
+                      <label class="comments__form-label" for="comment-author-name"><span class="visually-hidden">Name</span></label>
+                      <input id="comment-author-name" class="comments__form-field form__field" type="text" name="name" placeholder="Name *" required="" value="">
+                  </p>
+                  <p class="comments__form-field-wrapper form__field-wrapper">
+                      <label class="comments__form-label" for="comment-author-email"><span class="visually-hidden">Email</span></label>
+                      <input id="comment-author-email" class="comments__form-field form__field" type="email" name="email" placeholder="Email *" required="" value="">
+                  </p>
+                  <p class="comments__form-field-wrapper comments__form-field-wrapper--videocourse comments__form-field-wrapper--comment form__field-wrapper">
+                      <label class="comments__form-label" for="comment-field"><span class="visually-hidden">Write Your Comment</span></label>
+                      <textarea class="comments__comment-field form__field form__field--textarea" name="comment" id="comment-field" placeholder="Write Your Comment *" required=""></textarea>
+                  </p>
+                  <div class="comments__recapcha-container">
+                      <div class="comments__recapcha-wrapper form__recapcha-wrapper">
+                          <p class="requirements__field-wrapper form__field-wrapper">
+                              <label for="requirements-code"><span class="visually-hidden">Security code</span></label>
+                              <input id="requirements-code" class="form__field" type="number" name="security_code" placeholder="Security Code *" required="" autocomplete="off">
+                          </p>
+                          <figure class="form__recapcha"><img class="form__recapcha-image" data-s="/securimage.php?cid=FGP" src="/securimage.php?cid=FGP" alt="Secure Code"></figure>
+                          <button class="form__recapcha-refresh button button--primary" type="button">
+                              <img class="form__recapcha-refresh-arrow" src="/design/images/other/refresh-arrow.svg" alt="Refresh">
+                              <span class="visually-hidden">Refresh</span>
+                          </button>
+                      </div>
+                      <button class="requirements__submit-button button button--primary button--primary--large" type="submit">Submit</button>
+                      <small class="requirements__code-text requirements__code-text--button-right">Please enter security code exactly as shown</small>
+                  </div>
+              </form>
+            </section>
+          </div><!--/comments-v2-->
         </div>
       </div>
     </main>
@@ -220,8 +309,8 @@
     @@include('templates/footer.html')
 
   <div class="overlay">
-    @@include('templates/popups/modal-new-user.html')
-    @@include('templates/popups/modal-new-user2.html')
+    <!-- @@include('templates/popups/modal-new-user.html') -->
+    <!-- @@include('templates/popups/modal-new-user2.html') -->
   </div>
 
   @@include('templates/over-page.html')
