@@ -15,7 +15,7 @@
 }
 
 .rating__list {
-  counter-reset: myCounter;
+  counter-reset: myCounter 6;
   width: calc(50% - 10px);
 }
 
@@ -42,7 +42,7 @@
     font-size: 15px;
     line-height: normal;
     color: #ffffff;
-    counter-increment: myCounter;
+    counter-increment: myCounter -1;
     content:counter(myCounter);
 
     background-position: center;
