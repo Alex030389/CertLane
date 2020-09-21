@@ -1,5 +1,11 @@
 'use strict';
 
+// $(function() {
+//   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+//     $('.form__field').addClass('form__field--border-for-safary');
+//   }
+// });
+
 (function () {
   let formHintClassName = '.form__hint';
   let selectWrapperClass = '.form__select-wrapper';
