@@ -2,8 +2,13 @@
   padding-bottom: 30px;
 }
 
+.vendor__image-heading-box {
+  display: flex;
+}
+
 .vendor__image-wrapper {
-  float: left;
+  // float: left;
+  flex-shrink: 0;
   margin: 0;
   margin-top: 10px;
   margin-right: 6%;
@@ -12,10 +17,7 @@
 
   border-radius: 4px;
   overflow: hidden;
-
-  &--mb {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .vendor__image {
@@ -38,6 +40,13 @@
 
 .vendor__text {
   margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .vendor__image-wrapper {
+    width: 220px;
+    height: 104px;
+  }
 }
 
 @media (max-width: @mobile-width) {
